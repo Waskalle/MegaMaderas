@@ -130,8 +130,6 @@ $(document).ready(function() {
 });
 
 function addMenuOptions() {
-    console.log($('#ihbtnBuscarProducto').val());
-    console.log(window.location.href);
     $.ajax({
         url: $("#listOptions").val(),
         data: {}
@@ -156,7 +154,6 @@ function addMenuOptions() {
             $li.append($a);
             $('#ulServicios').append($li);
         });
-        console.log(data);
     })
     .fail(function() {})
     .always(function() {});
