@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use Mail;
+use Session;
+use Redirect;
 use App\Contacto;
+use App\Http\Requests;
+use Carbon\Carbon;
 use Laracasts\Flash\Flash;
-
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 class MessageController extends Controller {
 
 	/**
@@ -39,13 +41,19 @@ class MessageController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		//
-		$mensaje = new Contacto;
-		$mensaje->name = $request->name;
-		$mensaje->telephone = $request->telephone;
-		$mensaje->email = $request->email;
-		$mensaje->message = $request->message;
-		$mensaje->save();
+		$hoy = date('d-m-Y H:m a');
+		$data = [];
+		$data['Nombre'] = $request->name;
+		$data['Email'] = $request->email;
+		$data['Telefono'] = $request->telephone;
+		$data['Mensaje'] = $request->message;
+		$data['Fecha'] = $hoy;
+
+		Mail::send('Frontend.contact.plantilla',['data' => $data], function($msj){
+			$msj->subject('Correo de prueba');
+			$msj->to('waskalle@gmail.com');
+		});
+
 		Flash::success("El mensaje ha sido enviado correctamente");
 		return redirect('/contacto');
 	}
