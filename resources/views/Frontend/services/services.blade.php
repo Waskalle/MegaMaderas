@@ -10,8 +10,8 @@
       <a href="#producto{{$servicio->id}}" class="portfolio-link" data-toggle="modal">
           <img src="{{asset('images/servicios')}}/{{$servicio->id}}.jpg" class="img-responsive" alt="{{$servicio->nombre}}">
       </a>
-      <h1>{{$servicio->nombre}}</h1>
-      <p>{{$servicio->descripcion}}</p>
+      <h1 class="contactText">{{$servicio->nombre}}</h1>
+      <p class="contactText">{{$servicio->descripcion}}</p>
       <div class="not-show" aria-hidden="true">
         {{$servicio->nombre}}
         {{$servicio->descripcion}}
@@ -44,7 +44,7 @@
                                 <p>${{$servicio->precio}}</p>
                               </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
     <div class="divContentPagination">
     <ul class="pagination">
       @for ($i = 1; $i <= $servicios->lastPage(); $i++)
-        <li><button href="{{$servicios->url($i)}}" class="btn btn-lg btn-warning">{{$i}}</button></li>
+        <li><a href="{{$servicios->url($i)}}" class="btn btn-lg btn-warning">{{$i}}</a></li>
       @endfor
     </ul>
     </div>

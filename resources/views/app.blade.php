@@ -54,11 +54,13 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="input-group col-sm-4" style="float:right;">
-              <input id="inBuscarProducto" type="text" data-toggle="tooltip" data-placement="bottom" title="Presiona enter para más resultados" class="form-control" placeholder="Buscar producto..">
-              <span class="input-group-btn">
-                <button id="btnBuscarProducto" type="submit" class="btn btn-warning"><i class="fa fa-search" style="font-size:17px;"></i></button>
-              </span>
+            <div class="col-lg-3" style="float:right;">
+              <div class="input-group" >
+                <input id="inBuscarProducto" type="text" data-toggle="tooltip" data-placement="bottom" title="Presiona enter para más resultados" class="form-control contactText" placeholder="Buscar producto..">
+                <span class="input-group-btn">
+                  <button id="btnBuscarProducto" type="submit" class="btn btn-warning"><i class="fa fa-search" style="font-size:17px;"></i></button>
+                </span>
+              </div>
             </div>
             <div class="collapse navbar-collapse secTit col-sm-6" style="float:right;" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -113,12 +115,12 @@
     </header>
 @yield('content')
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="text-center secTit">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Ubicación</h3>
+                        <h1 class="footerText">Ubicación</h1>
                         <p>Av. Rio Nilo #1680 Col. Atlas C.P: 44870<br>Guadalajara, Jalisco</p>
                     </div>
                     <div class="footer-col col-md-4">
@@ -126,7 +128,7 @@
                     </div>
                     <div class='clear'></div>
                     <div class="footer-col col-md-4">
-                        <h3>Megamaderas S.A de C.V</h3>
+                        <h1 class="footerText">Megamaderas S.A de C.V</h1>
                         <p>Gracias por visitar nuestro sitio oficial. Esperamos cumplir con todas tus espectativas hacia nosotros.</p>
                     </div>
                 </div>
