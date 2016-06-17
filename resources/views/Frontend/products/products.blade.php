@@ -36,6 +36,7 @@
     @if($productos->count() > 0)
     @foreach ($productos as $producto)
     <div class="col-sm-4 portfolio-item portfolio-producto" id="divproducto{{$producto->id}}">
+        <h4>{{$producto->nombre}}</h4>
       <a href="#producto{{$producto->id}}" class="portfolio-link" data-toggle="modal">
           <img src="{{asset('images/productos')}}/{{$producto->id}}.jpg" class="img-responsive" alt="{{$producto->nombre}}" title="{{$producto->nombre}}">
       </a>
@@ -76,7 +77,7 @@
     <div class="divContentPagination">
     <ul class="pagination">
       @for ($i = 1; $i <= $productos->lastPage(); $i++)
-        <li><button href="{{$productos->url($i)}}" class="btn  btn-lg btn-warning">{{$i}}</button></li>
+        <li><a href="{{$productos->url($i)}}" class="btn  btn-lg btn-warning">{{$i}}</a></li>
       @endfor
     </ul>
     </div>
