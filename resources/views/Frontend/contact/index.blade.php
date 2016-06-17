@@ -4,10 +4,10 @@
 
 @section('content')
 <br><br><br>
-<div class="row text-center">
+<div class="row text-center contactText">
   <div class="col-lg-12">
 <div class="col-md-4">
-  <center><i class="fa fa-users" style="font-size:150px;"></i></center>
+  <center><i class="fa fa-users tilt" style="font-size:150px;"></i></center>
   <h1 class="tittle">Acerca de </h1>
   <p>Somos una empresa que se preocupa por sus clientes para mantener la satisfacción de estos
   lo más alta posible y así cumplir con sus expectativas.
@@ -16,7 +16,7 @@
 
 
 <div class="footer-col col-md-4">
-  <center><i class="fa fa-magic" style="font-size:150px;"></i></center>
+  <center><i class="fa fa-magic morph" style="font-size:150px;"></i></center>
   <h1 class="tittle">¿En que puedo ayudarte?</h1>
   <p>Todo el equipo de MegaMaderas esta aqui para ayudarte a resolver cualquiera de tus dudas que tengas en
     relación a nosotros, nuestros productos, nuestros servicios. </p>
@@ -25,7 +25,7 @@
 
 
 <div class="footer-col col-md-4">
-  <center><i class="fa fa-briefcase" style="font-size:150px;"></i></center>
+  <center><i class="fa fa-briefcase tilt" style="font-size:150px;"></i></center>
   <h1 class='tittle'>Objetivo</h1>
   <p>MegaMaderas tiene como objetivo ser la mejor empresa proveedora de maderas para todos los clientes del país.</p>
 </div>
@@ -34,7 +34,7 @@
 </div>
 
   <div class='col-lg-12'>
-    <center><i class="fa fa-envelope" style="font-size:150px;"></i></center>
+    <center><i class="fa fa-envelope tilt" style="font-size:150px;"></i></center>
     <h3 class='tittle'>Déjanos un mensaje con tus datos y nosotros te contactaremos a la brevedad.</h3>
     <p>Los tiempos de respuesta varían en relación a la demanda.</p>
   </div>
@@ -59,28 +59,28 @@
                     <div class="row control-group">
                         <div class="col-xs-12  controls">
                               {!! Form::label('name', 'Nombre completo',['class' => 'secTit','style' => 'font-size:25px;']) !!}
-                              {!! Form::text('name',null,['class' => 'form-control' ,'style' => 'font-size:20px;', 'placeholder' => 'Nombre..', 'required']) !!}
+                              {!! Form::text('name',null,['class' => 'form-control contactText' ,'style' => 'font-size:20px;', 'placeholder' => 'Nombre..', 'required']) !!}
                               <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class=" col-xs-12 controls">
                             {!! Form::label('email', 'Correo electrónico', ['class' => 'secTit','style' => 'font-size:25px;']) !!}
-                            {!! Form::email('email',null,['class' => 'form-control','style' => 'font-size:20px;','placeholder' => 'Correo Electrónico..', 'required', 'id' => 'email', 'required data-validation-required-message' => 'Porfavor ingresa una cuenta de correo valida.']) !!}
+                            {!! Form::email('email',null,['class' => 'form-control contactText','style' => 'font-size:20px;','placeholder' => 'Correo Electrónico..', 'required', 'id' => 'email', 'required data-validation-required-message' => 'Porfavor ingresa una cuenta de correo valida.']) !!}
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="col-xs-12 controls">
                           {!! Form::label('telephone', 'Número de teléfono',['class' => 'secTit','style' => 'font-size:25px;']) !!}
-                          {!! Form::text('telephone',null,['class' => 'form-control','style' => 'font-size:20px;', 'placeholder' => 'Teléfono..', 'required']) !!}
+                          {!! Form::text('telephone',null,['class' => 'form-control contactText','style' => 'font-size:20px;', 'placeholder' => 'Teléfono..', 'required']) !!}
                           <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="col-xs-12 controls">
                             {!! Form::label('message', 'Mensaje',['class' => 'secTit','style' => 'font-size:25px;']) !!}
-                            {!! Form::textarea('message',null,['class' => 'form-control', 'style' => 'font-size:20px;','placeholder' => 'Escribe tu mensaje...','required']) !!}
+                            {!! Form::textarea('message',null,['class' => 'form-control contactText', 'style' => 'font-size:20px;','placeholder' => 'Escribe tu mensaje...','required']) !!}
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-warning btn-lg btn-block" style="font-size:30px;"><i class="fa fa-location-arrow"></i>&nbsp;Enviar</button>
+                            <button type="submit" class="btn btn-warning btn-lg btn-block secTit" style="font-size:30px;"><i class="fa fa-location-arrow"></i>&nbsp;Enviar</button>
                         </div>
                     </div>
                 </form>

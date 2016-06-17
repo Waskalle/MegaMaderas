@@ -1,0 +1,36 @@
+FONTLOG for the Germano font
+==========================
+This file provides detailed information on the Germano font.
+This information should be distributed along with the Germano font and any
+derivative works.
+
+Basic Font Information
+----------------------
+Germano is based on Open Sans Condensed by Steve Matheson, with adding of a
+BoldOblique Typeface, and changing to OpenType CFF. Germano is released under the Apache
+License v2.0 as shown below.
+
+Copyright (c) 2011-12 Google, (c) 2016 Cristiano Sobral.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+ChangeLog
+---------
+- 2016-03-09: Changes to OpenType CFF, and BoldOblique weight
+
+
+Contributors
+------------
+Steve Matheson (Google), and Cristiano Sobral (changing to OpenType CFF, and BoldOblique
+weight).

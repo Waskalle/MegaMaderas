@@ -2,7 +2,7 @@
 
 @section('tittle')
 <!--test-->
-  <br><div style="margin-top:40px;"></div>
+  <div style="padding-top:0px;"></div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -18,32 +18,32 @@
       <div class="item active">
         <img src="{{asset('FotosMM/Servicios/Servicio.jpg')}}" alt="img1" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Un morro trabajando</h3>
-          <p>descripcion de morro en trabajando en chinga</p>
+          <h3>Servicios</h3>
+          <p>En megamaderas ofrecemos los mejores servicios</p>
         </div>
       </div>
 
       <div class="item">
         <img src="{{asset('FotosMM/Servicios/IMG_0219.jpg')}}" alt="img2" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Otra vez el vato</h3>
-          <p>Anda en putiza... el trabajo es para ayer alv!</p>
+          <h3>Personal Altamente Capacitado</h3>
+          <p>Contamos con el mejor personal para atender tus necesidades en el ámbito de las maderas.!!</p>
         </div>
       </div>
 
       <div class="item">
         <img src="{{asset('FotosMM/Servicios/IMG_0200.jpg')}}" alt="img3" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Manos de macho</h3>
-          <p>Fierro pariente ala verga</p>
+          <h3>Tu mejor Opción!!</h3>
+          <p>Megamaderas S.A de C.V</p>
         </div>
       </div>
 
       <div class="item">
         <img src="{{asset('FotosMM/Servicios/IMG_0203.jpg')}}" alt="img4" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Trabajo de precicion</h3>
-          <p>Ahuevolas</p>
+          <h3>Trabajo de precisión</h3>
+          <p>Los servicios que ofrecemos están realizados con la mas alta calidad y precisión</p>
         </div>
       </div>
 
@@ -152,11 +152,11 @@
                                             <hr class="star-primary">
                                             <img src="{{asset('images/productos')}}/{{$producto->id}}.jpg" class="img-responsive img-centered" alt="{{$producto->nombre}}" title="{{$producto->nombre}}">
                                             <ul class="list-inline item-details">
-                                              <li><strong><p>Tipo</p></strong>
+                                              <li><strong><p class="contactText">Tipo</p></strong>
                                                 <p>{{$producto->tipo}}</p>
                                               </li>
                                             </ul>
-                                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -176,27 +176,41 @@
             </div>
         </div>
         <div class="row">
-            <div class="footer-col col-md-4">
-                <img src="{{asset('images/Marcas/cerrajes.png')}}" class="img-responsive img-centered" alt="Cerrajes" title="Cerrajes">
+          <div class="col-lg-12">
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/cerrajes.png')}}" class="img-responsive img-centered" alt="Cerrajes" title="Cerrajes">
+              </div>
+              <div class="footer-col col-md-4 morph">
+                  <img src="{{asset('images/Marcas/dekken.png')}}" class="img-responsive img-centered" alt="Dekken" title="Dekken">
+              </div>
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/sayer.jpg')}}" class="img-responsive img-centered" alt="Sayer" title="Sayer">
+              </div>
+          </div>
+          <br>
+          <div class="col-lg-12">
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/ducasse.jpg')}}" class="img-responsive img-centered" alt="ducasse" title="Megamaderas">
+              </div>
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/handyhome.jpg')}}" class="img-responsive img-centered" alt="handyhome" title="Megamaderas">
+              </div>
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/masisa.jpg')}}" class="img-responsive img-centered" alt="Masisa" title="Masisa">
+              </div>
             </div>
-            <div class="footer-col col-md-4">
-                <img src="{{asset('images/Marcas/dekken.png')}}" class="img-responsive img-centered" alt="Dekken" title="Dekken">
+            <div class="col-lg-12">
+              <div class="footer-col col-md-4 morph">
+                  <img src="{{asset('images/Marcas/dexter.png')}}" class="img-responsive img-centered" alt="dexter" title="Megamaderas">
+              </div>
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/resistol.gif')}}" class="img-responsive img-centered" alt="resistol" title="Megamaderas">
+              </div>
+              <div class="footer-col col-md-4 tilt">
+                  <img src="{{asset('images/Marcas/willsonart.jpg')}}" class="img-responsive img-centered" alt="willsonart" title="Megamaderas">
+              </div>
             </div>
-            <div class="footer-col col-md-4">
-                <img src="{{asset('images/Marcas/sayer.jpg')}}" class="img-responsive img-centered" alt="Sayer" title="Sayer">
-            </div>
-            <div class="footer-col col-md-4">
-                <img src="{{asset('images/Marcas/masisa.jpg')}}" class="img-responsive img-centered" alt="Masisa" title="Masisa">
-                <ul class="list-inline">
 
-                </ul>
-            </div>
-            <div class="footer-col col-md-4">
-                <img src="{{asset('images/Marcas/logo.png')}}" class="img-responsive img-centered" alt="Megamaderas" title="Megamaderas">
-                <ul class="list-inline">
-
-                </ul>
-            </div>
         </div>
     </div>
 

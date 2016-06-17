@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'jmed.mexico@gmail.com', 'name' => 'Waskalle Bahena'],
+    'from' => ['address' => 'jmed.mexico@gmail.com', 'name' => 'Megamaderas Contacto'],
 
     /*
     |--------------------------------------------------------------------------

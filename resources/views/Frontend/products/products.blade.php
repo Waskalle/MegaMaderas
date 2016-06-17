@@ -36,7 +36,7 @@
     @if($productos->count() > 0)
     @foreach ($productos as $producto)
     <div class="col-sm-4 portfolio-item portfolio-producto" id="divproducto{{$producto->id}}">
-        <h4>{{$producto->nombre}}</h4>
+        <h4 class="contactText">{{$producto->nombre}}</h4>
       <a href="#producto{{$producto->id}}" class="portfolio-link" data-toggle="modal">
           <img src="{{asset('images/productos')}}/{{$producto->id}}.jpg" class="img-responsive" alt="{{$producto->nombre}}" title="{{$producto->nombre}}">
       </a>
@@ -58,15 +58,15 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>{{$producto->nombre}}</h2>
+                            <h2 class="contactText">{{$producto->nombre}}</h2>
                             <hr class="star-primary">
                             <img src="{{asset('images/productos')}}/{{$producto->id}}.jpg" class="img-responsive img-centered" alt="{{$producto->nombre}}" title="{{$producto->nombre}}">
                             <ul class="list-inline item-details">
-                              <li><strong><p>Tipo</p></strong>
-                                <p>{{$producto->tipo}}</p>
+                              <li><strong><p class="contactText">Tipo</p></strong>
+                                <p class="contactText">{{$producto->tipo}}</p>
                               </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                         </div>
                     </div>
                 </div>
