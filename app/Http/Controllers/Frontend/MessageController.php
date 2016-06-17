@@ -50,8 +50,8 @@ class MessageController extends Controller {
 		$data['Fecha'] = $hoy;
 
 		Mail::send('Frontend.contact.plantilla',['data' => $data], function($msj){
-			$msj->subject('Correo de prueba');
-			$msj->to('waskalle@gmail.com');
+			$msj->subject('Mensaje desde la web');
+			$msj->to('klopezmegamaderas@gmail.com');
 		});
 
 		Flash::success("El mensaje ha sido enviado correctamente");

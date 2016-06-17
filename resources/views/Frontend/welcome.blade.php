@@ -18,32 +18,32 @@
       <div class="item active">
         <img src="{{asset('FotosMM/Servicios/Servicio.jpg')}}" alt="img1" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Un morro trabajando</h3>
-          <p>descripcion de morro en trabajando en chinga</p>
+          <h3>Servicios</h3>
+          <p>En megamaderas ofrecemos los mejores servicios</p>
         </div>
       </div>
 
       <div class="item">
         <img src="{{asset('FotosMM/Servicios/IMG_0219.jpg')}}" alt="img2" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Otra vez el vato</h3>
-          <p>Anda en putiza... el trabajo es para ayer alv!</p>
+          <h3>Personal Altamente Capacitado</h3>
+          <p>Contamos con el mejor personal para atender tus necesidades en el ámbito de las maderas.!!</p>
         </div>
       </div>
 
       <div class="item">
         <img src="{{asset('FotosMM/Servicios/IMG_0200.jpg')}}" alt="img3" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Manos de macho</h3>
-          <p>Fierro pariente ala verga</p>
+          <h3>Tu mejor Opción!!</h3>
+          <p>Megamaderas S.A de C.V</p>
         </div>
       </div>
 
       <div class="item">
         <img src="{{asset('FotosMM/Servicios/IMG_0203.jpg')}}" alt="img4" width="460" height="345" class="img-responsive">
         <div class="carousel-caption shaCapt">
-          <h3>Trabajo de precicion</h3>
-          <p>Ahuevolas</p>
+          <h3>Trabajo de precisión</h3>
+          <p>Los servicios que ofrecemos están realizados con la mas alta calidad y precisión</p>
         </div>
       </div>
 
